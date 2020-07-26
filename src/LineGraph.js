@@ -96,11 +96,13 @@ fetchData();
     <div>
       <h3>I am a graph</h3>
       {data?.length>0 && (
-        <Line data={{
+        <Line
+           options={options}
+          data={{
           datasets:[{
             data: data
           }]
-        }} options={options}/>  
+        }}/>
       )}
 
     </div>
