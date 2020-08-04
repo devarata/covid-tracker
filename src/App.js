@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core"
 
 import Table from './Table';
-import {sortData} from './util.js';
+import {sortData,prettyPrintStat} from './util.js';
 import "leaflet/dist/leaflet.css";
 
 
@@ -23,6 +23,8 @@ function App() {
 
   const [mapCenter, setMapCenter] = useState({lat:34.80746, lng:-40.4796})
   const [mapZoom, setMapZoom] = useState(3)
+
+  const [mapCountries, setMapCountries] = useState([]);
 
   useEffect(()=>{
     fetch("https://disease.sh/v3/covid-19/all")
@@ -46,7 +48,7 @@ useEffect(()=>{
 
    const sortedData = sortData(data);
   setTableData(sortedData);
-  //  setTableData(data);
+  setMapCountries(data);
     setCountries(countries);
    });
 
@@ -95,13 +97,14 @@ await fetch(url)
            </div>
 
            <div  className="app__stats">
-             <InfoBox title="Corona Virus Cases" cases={countryInfo.todayCases} total={countryInfo.cases}/>
-             <InfoBox title="Recovered Cases" cases={countryInfo.todayRecovered} total={countryInfo.recovered}/>
-             <InfoBox title="Death Cases" cases={countryInfo.todayDeaths} total={countryInfo.deaths}/>
+             <InfoBox title="Corona Virus Cases" cases={prettyPrintStat(countryInfo.todayCases)} total={prettyPrintStat(countryInfo.cases)}/>
+             <InfoBox title="Recovered Cases" cases={prettyPrintStat(countryInfo.todayRecovered)} total={prettyPrintStat(countryInfo.recovered)}/>
+             <InfoBox title="Death Cases" cases={prettyPrintStat(countryInfo.todayDeaths)} total={prettyPrintStat(countryInfo.deaths)}/>
            </div>
            <Map
              center={mapCenter}
              zoom={mapZoom}
+             countries={mapCountries}
            />
         </div>
         <Card className="app__right">
