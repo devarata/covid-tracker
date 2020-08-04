@@ -1,0 +1,65 @@
+[33mcommit 4b34e9a49994543ec0c0b4e1e57a42c35c8c2051[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sun Jul 26 18:57:09 2020 +0530
+
+    still 3:05 to be rollback
+
+[33mcommit c5ace71e4e43e7cb72160ec7c78d97137ac0e283[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sun Jul 26 00:48:18 2020 +0530
+
+    next day 3:05
+
+[33mcommit 113511ff80efa5b8acea9629d6f825d75135b220[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sat Jul 25 23:12:23 2020 +0530
+
+    table in sorted order
+
+[33mcommit 1f52f7cf825dca704ca7cf9c08fae884d51b1a2f[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sat Jul 25 21:05:01 2020 +0530
+
+    all countries cards display working
+
+[33mcommit a430d148105622c5d11a4dee89523369013ed40d[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sat Jul 25 19:29:42 2020 +0530
+
+    all countries in dropdown
+
+[33mcommit 216ee8fea1a90f3dac62503a1ad2ad0743ead84d[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sat Jul 25 18:59:12 2020 +0530
+
+    drop down working
+
+[33mcommit 9e8a2230151bdc559697e5a5682bdbc8772788c8[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sat Jul 25 18:17:15 2020 +0530
+
+    website structure in app.js
+
+[33mcommit 7331fcf443da9b088f7295215d56b18c644f5455[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sat Jul 25 18:11:52 2020 +0530
+
+    working after clean up
+
+[33mcommit bbb84a8ed45ac459c202ceafdacbb8589e71864c[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sat Jul 25 18:00:06 2020 +0530
+
+    init project
+
+[33mcommit e702b6b61ac9c18b2909c718d1d9b75d3bd452a1[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sat Jul 25 17:36:06 2020 +0530
+
+    initial project
+
+[33mcommit f2408b643d9badc80da8f8854e8613aff6d5b6cd[m
+Author: Ride0401 <devarata.oza@gmail.com>
+Date:   Sat Jul 25 17:23:29 2020 +0530
+
+    Initialize project using Create React App

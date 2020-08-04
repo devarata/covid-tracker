@@ -12,7 +12,7 @@ import {
 
 import Table from './Table';
 import {sortData} from './util.js';
-import LineGraph from './LineGraph';
+
 
 
 function App() {
@@ -99,8 +99,8 @@ await fetch(url)
             <h3>Live Cases by Country</h3>
             <Table countries={tableData}/>
             <h3>Worldwide new cases</h3>
-            <LineGraph/>
-              {/*Graph*/}
+
+              {/*LineGraph component*/}
           </CardContent>
         </Card>
 
