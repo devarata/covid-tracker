@@ -59,7 +59,7 @@ const onCountryChange = async (e)=> {
   setCountry(countryCode);
 
 
- const url = countryCode ==='worldwide' ? '=all':
+ const url = countryCode ==='worldwide' ? "https://disease.sh/v3/covid-19/all":
  `https://disease.sh/v3/covid-19/countries/${countryCode}`
 
 await fetch(url)
@@ -67,6 +67,10 @@ await fetch(url)
 .then((data)=>{
   setCountry(countryCode);
   setCountryInfo(data);
+
+
+  setMapCenter([data.countryInfo.lat,data.countryInfo.long])
+  setMapZoom(4)
 
 });
 };
