@@ -83,7 +83,7 @@ await fetch(url)
         <div className="app__left">
 
           <div className="app__header">
-           <h2>COVID-19 TRACKER</h2>
+           <h1>COVID-19 TRACKER</h1>
              <FormControl className="app__dropdown">
                <Select variant="outlined" value={country} onChange={onCountryChange}>
                  <MenuItem value="worldwide">Worldwide</MenuItem>
