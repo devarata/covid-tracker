@@ -25,6 +25,7 @@ function App() {
   const [mapZoom, setMapZoom] = useState(3)
 
   const [mapCountries, setMapCountries] = useState([]);
+  const [casesType,setCasesType] = useState("cases")
 
   useEffect(()=>{
     fetch("https://disease.sh/v3/covid-19/all")
@@ -82,7 +83,7 @@ await fetch(url)
         <div className="app__left">
 
           <div className="app__header">
-           <h2>Covid19 tracker</h2>
+           <h2>COVID-19 TRACKER</h2>
              <FormControl className="app__dropdown">
                <Select variant="outlined" value={country} onChange={onCountryChange}>
                  <MenuItem value="worldwide">Worldwide</MenuItem>
@@ -97,14 +98,15 @@ await fetch(url)
            </div>
 
            <div  className="app__stats">
-             <InfoBox title="Corona Virus Cases" cases={prettyPrintStat(countryInfo.todayCases)} total={prettyPrintStat(countryInfo.cases)}/>
-             <InfoBox title="Recovered Cases" cases={prettyPrintStat(countryInfo.todayRecovered)} total={prettyPrintStat(countryInfo.recovered)}/>
-             <InfoBox title="Death Cases" cases={prettyPrintStat(countryInfo.todayDeaths)} total={prettyPrintStat(countryInfo.deaths)}/>
+             <InfoBox isRed active={casesType==="cases"} onClick={(e)=>setCasesType("cases")} title="Corona Virus Cases" cases={prettyPrintStat(countryInfo.todayCases)} total={prettyPrintStat(countryInfo.cases)}/>
+             <InfoBox active={casesType==="recovered"} onClick={(e)=>setCasesType("recovered")} title="Recovered Cases" cases={prettyPrintStat(countryInfo.todayRecovered)} total={prettyPrintStat(countryInfo.recovered)}/>
+             <InfoBox isRed active={casesType==="death"} onClick={(e)=>setCasesType("deaths")} title="Death Cases" cases={prettyPrintStat(countryInfo.todayDeaths)} total={prettyPrintStat(countryInfo.deaths)}/>
            </div>
            <Map
              center={mapCenter}
              zoom={mapZoom}
              countries={mapCountries}
+             casesType={casesType}
            />
         </div>
         <Card className="app__right">

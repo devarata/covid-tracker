@@ -17,7 +17,7 @@ const casesTypeColors= {
     multiplier:1200,
   },
   deaths:{
-    hex:"#fb4443",
+    hex:"#6a5d5d",
     rgb:"rgb(251,68,67)",
     half_op:"rgba(251,68,67,0.5)",
     multiplier:2000,
