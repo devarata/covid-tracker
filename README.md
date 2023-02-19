@@ -18,7 +18,7 @@
 - WebRTC for real-time communication
 
 ## Setup
-  1. Clone the repository
+  1. Clone the repository `https://github.com/devarata/covid-tracker.git`
   2. Navigate to the project directory
   3. Install the dependencies with `npm install`
   4. Start the development server with `npm start`
