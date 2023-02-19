@@ -22,6 +22,8 @@
   2. Navigate to the project directory `cd covid-tracker`
   3. Install the dependencies with `npm install`
   4. Start the development server with `npm start`
+ 
+Open your browser and navigate to `http://localhost:3000`
   
 
 
