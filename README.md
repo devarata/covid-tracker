@@ -11,11 +11,7 @@
 - Track active cases, recoveries, and deaths
 - See a map visualization of affected areas
 
-## Tech Stack
-- React.js for the front-end
-- Express.js and Node.js for the back-end
-- Firebase for hosting and deployment
-- WebRTC for real-time communication
+
 
 ## Setup
   1. Clone the repository `https://github.com/devarata/covid-tracker.git`
